@@ -1,0 +1,40 @@
+body {
+    background: #E5E5E5;
+    font-family: $mainFF;
+}
+
+.container {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin listNull {
+    list-style-type: none;
+    color: $bgandH3Color;
+    font-family: $mainFF;
+    font-size: $btnFS;
+}
+
+@mixin title {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+@mixin listTitle {
+    font-weight: 600;
+    font-size: 30px;
+    color: $bgandH3Color;
+}
+
+@mixin text {
+    font-weight: 400;
+    font-size: $btnFS;
+    line-height: 30px;
+    color: $textColor;
+}

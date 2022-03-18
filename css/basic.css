@@ -1,0 +1,14 @@
+body {
+  background: #E5E5E5;
+}
+
+.container {
+  width: 1350px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=basic.css.map */
