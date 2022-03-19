@@ -3,7 +3,6 @@
 @import 'basic';
 @import 'cards';
 
-
 .header {
     position: relative;
 }
@@ -87,67 +86,61 @@
         @include title;
         margin-bottom: 96px;
     }
-}
-
-.skills-cards {
-    display: flex;
-    justify-content: center;
-}
-
-.card-list {
-    padding: 429px 45px 92px 43px;
-    &__img {
-        top: 35px;
-        left: 23px;
-    }
-    &__text {
-        width: 347px;
-        margin-bottom: 59px;
-    }
-}
-
-.second-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.card-boxs {
-    display: flex;
-}
-
-.card-list1 {
-    padding: 251px 41px 44px 41px;
-    margin-left: 18px;
-    &__img {
-        top: 4px;
-        left: 122px;
-    }
-    &__img2 {
-        top: 9px;
-        left: 1px;
-    }
-    &__text {
-        width: 347px;
-        margin-bottom: 48px;
-    }
-    &__text2 {
-        width: 355px;
-        margin-bottom: 48px;
-    }
-}
-
-.card-list3 {
-    max-width: 835px;
-    height: 343px;
-    margin: 20px 0 0 18px;
-    padding: 43px 0 0 48px;
-    &__img {
-        top: 44px;
-        left: 478px;
-    }
-    &__text {
-        width: 345px;
-        margin-bottom: 40px;
+    &-cards {
+        display: flex;
+        justify-content: center;
+        .card-list {
+            padding: 429px 45px 92px 43px;
+            &__img {
+                top: 35px;
+                left: 23px;
+            }
+            &__text {
+                width: 347px;
+                margin-bottom: 59px;
+            }
+        }
+        .second-card {
+            display: flex;
+            flex-direction: column;
+            .card-boxs {
+                display: flex;
+                .card-list1 {
+                    padding: 251px 41px 44px 41px;
+                    margin-left: 18px;
+                    &__img {
+                        top: 4px;
+                        left: 122px;
+                    }
+                    &__img2 {
+                        top: 9px;
+                        left: 1px;
+                    }
+                    &__text {
+                        width: 347px;
+                        margin-bottom: 48px;
+                    }
+                    &__text2 {
+                        width: 355px;
+                        margin-bottom: 48px;
+                    }
+                }    
+            }
+            .card-list3 {
+                max-width: 835px;
+                height: 343px;
+                margin: 20px 0 0 18px;
+                padding: 43px 0 0 48px;
+                &__img {
+                    top: 44px;
+                    left: 478px;
+                }
+                &__text {
+                    width: 345px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
     }
 }
 
@@ -290,3 +283,6 @@ hr {
     height: 1px;
     background: #C4C4C4;
 }
+
+@import './media/992px.scss';
+@import './media/767px.scss';
